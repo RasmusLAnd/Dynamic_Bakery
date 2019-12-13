@@ -1,0 +1,33 @@
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\Test _Backery.exe
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\Test _Backery.deps.json
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\Test _Backery.runtimeconfig.json
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\Test _Backery.runtimeconfig.dev.json
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\Test _Backery.dll
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\Test _Backery.pdb
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.csprojAssemblyReference.cache
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\staticwebassets\Test _Backery.StaticWebAssets.Manifest.cache
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\staticwebassets\Test _Backery.StaticWebAssets.xml
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.AssemblyInfoInputs.cache
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.AssemblyInfo.cs
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.RazorTargetAssemblyInfo.cache
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.dll
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.pdb
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.RazorAssemblyInfo.cache
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.RazorAssemblyInfo.cs
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.TagHelpers.input.cache
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.TagHelpers.output.cache
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.RazorCoreGenerate.cache
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.RazorTargetAssemblyInfo.cs
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\Test _Backery.Views.dll
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\Test _Backery.Views.pdb
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.Views.pdb
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Test _Backery.csproj.CopyComplete
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Razor\Views\Pastries\List.cshtml.g.cs
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\bin\Debug\netcoreapp3.0\libman.json
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\rlua\source\repos\Test _Backery\Test _Backery\obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs

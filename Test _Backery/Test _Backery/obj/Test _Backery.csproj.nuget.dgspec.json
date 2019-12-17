@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rlua\\source\\repos\\Test _Backery\\Test _Backery\\Test _Backery.csproj": {}
+    "C:\\Users\\rlua\\OneDrive - Novozymes A S\\Documents\\github\\Dynamic bakery\\Dynamic_Bakery\\Test _Backery\\Test _Backery\\Test _Backery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rlua\\source\\repos\\Test _Backery\\Test _Backery\\Test _Backery.csproj": {
+    "C:\\Users\\rlua\\OneDrive - Novozymes A S\\Documents\\github\\Dynamic bakery\\Dynamic_Bakery\\Test _Backery\\Test _Backery\\Test _Backery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rlua\\source\\repos\\Test _Backery\\Test _Backery\\Test _Backery.csproj",
+        "projectUniqueName": "C:\\Users\\rlua\\OneDrive - Novozymes A S\\Documents\\github\\Dynamic bakery\\Dynamic_Bakery\\Test _Backery\\Test _Backery\\Test _Backery.csproj",
         "projectName": "Test _Backery",
-        "projectPath": "C:\\Users\\rlua\\source\\repos\\Test _Backery\\Test _Backery\\Test _Backery.csproj",
+        "projectPath": "C:\\Users\\rlua\\OneDrive - Novozymes A S\\Documents\\github\\Dynamic bakery\\Dynamic_Bakery\\Test _Backery\\Test _Backery\\Test _Backery.csproj",
         "packagesPath": "C:\\Users\\rlua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rlua\\source\\repos\\Test _Backery\\Test _Backery\\obj\\",
+        "outputPath": "C:\\Users\\rlua\\OneDrive - Novozymes A S\\Documents\\github\\Dynamic bakery\\Dynamic_Bakery\\Test _Backery\\Test _Backery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +40,18 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Test__Backery.Models;
@@ -8,10 +10,17 @@ namespace Test__Backery
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IPastriesRepository, MockPastriesRepository>();
-            services.AddScoped<ICategoryRepository, MockCategoryRepository>();
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<IPastriesRepository, PastriesRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             
             services.AddControllersWithViews();
         }

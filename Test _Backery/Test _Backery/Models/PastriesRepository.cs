@@ -1,14 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Test__Backery.Models
 {
-    public class PastriesRepository: IPastriesRepository
+    public class PastriesRepository : IPastriesRepository
     {
         private readonly AppDbContext _appDbContext;
+
 
         public PastriesRepository(AppDbContext appDbContext)
         {
@@ -17,9 +16,9 @@ namespace Test__Backery.Models
 
         public IEnumerable<Pastries> AllPastries
         {
-            get 
+            get
             {
-                return _appDbContext.Pastries.Include(c => c.Category);            
+                return _appDbContext.Pastries.Include(c => c.Category);
             }
         }
 
@@ -33,9 +32,10 @@ namespace Test__Backery.Models
 
         public Pastries GetPastriesById(int pastriesId)
         {
-           
-                return _appDbContext.Pastries.FirstOrDefault(p => p.IsbackeryOfTheWeek);
-           
+
+            return _appDbContext.Pastries.FirstOrDefault(p => p.IsbackeryOfTheWeek);
+
         }
     }
+    //
 }

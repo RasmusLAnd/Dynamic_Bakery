@@ -1,7 +1,10 @@
-﻿namespace Test__Backery.Models
+﻿using System.Collections.Generic;
+
+namespace Test__Backery.Models
 {
     public class Pastries
     {
+       
         public int PastriesId { get; set; }
         public string Name { get; set; }
         public string ShortDescription { get; set; }
@@ -11,6 +14,10 @@
         public bool InStock { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
+
+        
+     
+
 
 
         //public string AllergyInformation { get; set; }

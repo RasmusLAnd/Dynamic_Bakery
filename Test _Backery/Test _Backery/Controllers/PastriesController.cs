@@ -1,5 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
 using Test__Backery.Models;
 using Test__Backery.ViewModels;
 
@@ -10,12 +12,15 @@ namespace Test__Pasteries.Models.Controllers
     public class PastriesController : Controller
     {
         private readonly IPastriesRepository _pastriesRepository;
-        private readonly ICategoryRepository _categoryRepository;
+        private readonly IReviewRepository _reviewRepository;
 
-        public PastriesController(IPastriesRepository pasteriesRepository, ICategoryRepository categoryRepository)
+
+        
+
+        public PastriesController(IPastriesRepository pasteriesRepository, ICategoryRepository categoryRepository, IReviewRepository reviewRepository)
             {
             _pastriesRepository = pasteriesRepository;
-            _categoryRepository = categoryRepository;
+            _reviewRepository = reviewRepository;
             }
 
         public ViewResult List()
@@ -23,9 +28,13 @@ namespace Test__Pasteries.Models.Controllers
             PastriesListViewModel pasteriesListViewModel = new PastriesListViewModel
             {
                 Pastries = _pastriesRepository.AllPastries
+               
+
             };
             return View(pasteriesListViewModel);
-
         }
+        
+
+
     }
 }

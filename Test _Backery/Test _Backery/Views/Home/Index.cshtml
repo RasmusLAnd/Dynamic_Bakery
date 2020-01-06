@@ -1,0 +1,30 @@
+﻿@model HomeViewModel
+
+<h2>Best Bakery in Town</h2>
+<h3>Try our delicious pastry</h3>
+
+
+
+@foreach (var pastries in Model.PastriesList)
+{
+    <h1> @pastries.Name</h1>
+    var counter = 0;
+    var length = 0;
+    <partial name="_PastriesCard" model="pastries" />
+
+    <a asp-controller="Review" asp-action="ReviewLook" asp-route-id="@pastries.PastriesId"> Review</a>
+
+    @foreach (var reviews in Model.ReviewList)
+    {
+        if (@pastries.PastriesId == @reviews.PastriesId)
+        {<h2>@reviews.Stars, @reviews.ReviewComm</h2>
+            counter = counter + reviews.Stars;
+            length = length + 1;
+        }
+
+    }
+    if (length != 0)
+    {
+        var average = counter / length;
+        <h2> The average stars for @pastries.Name are: @average</h2>}
+}

@@ -18,11 +18,11 @@ namespace Test__Backery.Models
         {
             get
             {
-                return _appDbContext.Pastries.Include(c => c.Category);
+                return _appDbContext.Pastries;
             }
         }
 
-        public IEnumerable<Pastries> PastriesOfTheWeek
+        public IEnumerable<Pastries> BakeryOfTheWeek
         {
             get
             {
@@ -30,12 +30,18 @@ namespace Test__Backery.Models
             }
         }
 
+        public IEnumerable<Review>GetReviewsByPastriesId(int pastriesId)
+        {
+            return _appDbContext.Reviews.Where(r => r.PastriesId == pastriesId);
+        }
+
         public Pastries GetPastriesById(int pastriesId)
         {
-
-            return _appDbContext.Pastries.FirstOrDefault(p => p.IsbackeryOfTheWeek);
-
+            return _appDbContext.Pastries.FirstOrDefault(p => p.PastriesId == pastriesId);
         }
+
+       
+
     }
     //
 }

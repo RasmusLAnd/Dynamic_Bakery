@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using Test__Backery.ViewModels;
 using System.Linq;
 using GenFu;
-
+using Test__Backery.Controllers;
 
 namespace Bakery_Tests
 {
@@ -23,10 +23,11 @@ namespace Bakery_Tests
             //Arrange  
 
             var mockPastriesRepo = new Mock<IPastriesRepository>();
-            var mockCatRepo = new Mock<ICategoryRepository>();
+            var mockCategoryRepo = new Mock<ICategoryRepository>();
+            var mockReviewRepo = new Mock<IReviewRepository>();
 
             //Act           
-            var pastriesController = new PastriesController(mockPastriesRepo.Object, mockCatRepo.Object);
+            var pastriesController = new PastriesController(mockPastriesRepo.Object, mockCategoryRepo.Object, mockReviewRepo.Object);
             var result = pastriesController.List();
             
             //Assert            
@@ -62,6 +63,19 @@ namespace Bakery_Tests
             //Assert
             
         }*/
+        [Fact]
+        public void SecondTest()
+        {//Arrange  
+            var mockPastriesRepo = new Mock<IPastriesRepository>();
+            var mockReviewRepo = new Mock<IReviewRepository>();
+         
+            //Act           
+              var homeController = new HomeController(mockPastriesRepo.Object, mockReviewRepo.Object);
+            var data = homeController.Index();
+            //Assert 
+            Assert.IsType<ViewResult>(data);
+
+        }
 
     }
 

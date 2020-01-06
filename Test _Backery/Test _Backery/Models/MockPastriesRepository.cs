@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Test__Backery.Models
 {
@@ -18,12 +19,18 @@ namespace Test__Backery.Models
                 new Pastries {PastriesId = 4, Name="Baguette", Price=20M, ShortDescription="Long Bread", LongDescription="Long bread from France - the true parisian feeling", Category = _categoryRepository.AllCategories.ToList()[0], InStock=true, IsbackeryOfTheWeek=true}
             };
 
-        public IEnumerable<Pastries> PastriesOfTheWeek { get; }
+        public IEnumerable<Pastries> BakeryOfTheWeek { get; }
 
         public Pastries GetPastriesById(int pastriesId)
         {
             return AllPastries.FirstOrDefault(p => p.PastriesId == pastriesId);
         }
+
+        public IEnumerable<Review>GetReviewsByPastriesId(int pastriesId)
+        {
+            throw new Exception("mockPastriesRepo implemt.");
+        }
+      
     }
 }
 

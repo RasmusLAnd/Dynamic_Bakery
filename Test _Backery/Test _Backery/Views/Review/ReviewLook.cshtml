@@ -1,0 +1,18 @@
+﻿@model Review
+
+<form asp-action="ReviewLook" model ="post">
+    <h2>Do you like our pastries?</h2>
+    <div>
+        <input asp-for="PastriesId" value="@ViewBag.PastriesId" type="hidden" />
+    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div>
+        <label asp-for="Stars"></label>
+        <div> <input asp-for="Stars" /> </div>
+        <label asp-for="ReviewComm"></label>
+        <div> <input asp-for="ReviewComm" /> </div>
+        <div><input type="submit" /></div>
+
+
+    </div>
+</form>

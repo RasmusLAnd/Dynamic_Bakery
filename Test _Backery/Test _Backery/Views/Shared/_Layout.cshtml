@@ -8,6 +8,8 @@
 <body>
     <div>
         @RenderBody()
+        <partial name="_LoginPartial"/>
     </div>
+    @RenderSection("Scripts",required:false)
 </body>
 </html>

@@ -1,18 +1,12 @@
 ﻿@model PastriesListViewModel
 
 
-    <h1>@Model.CurrentCategory</h1>
-    @foreach (var pastries in Model.Pastries)
-    {
-    <div>
-        <h2>@pastries.Name</h2> 
-        <h3>@pastries.Price</h3> 
+<h1>@Model.CurrentCategory</h1>
+@foreach (var pastries in Model.Pastries)
+{
+    <partial name="_PastriesCard" model="pastries" />
 
-        <h4>@pastries.Category.CategoryName</h4>
-        <h4>@pastries.ShortDescription </h4>
-        <h4>@pastries.LongDescription </h4>
-    </div>
-    }
+}
 
 
 
